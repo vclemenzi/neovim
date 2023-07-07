@@ -8,15 +8,12 @@ require("lazy").setup({
 	    build = ':TSUpdate'
     },
     {
-	    'neovim/nvim-lspconfig',
-        dependencies = {
-      		{ 'williamboman/mason.nvim', config = true },
-      		'williamboman/mason-lspconfig.nvim',
-    	},
-    },
-    {
 	    'nvim-lualine/lualine.nvim',
 	    dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
+    {
+        'neoclide/coc.nvim',
+        branch = 'release'
     },
     {
 	    'm4xshen/autoclose.nvim'
@@ -25,26 +22,9 @@ require("lazy").setup({
         'windwp/nvim-ts-autotag'
     },
     {
-        'VonHeikemen/lsp-zero.nvim',
-        branch = 'v2.x',
-        dependencies = {
-            {'neovim/nvim-lspconfig'},
-            {
-                'williamboman/mason.nvim',
-                build = function()
-                    pcall(vim.cmd, 'MasonUpdate')
-                end,
-            },
-            {'williamboman/mason-lspconfig.nvim'},
-            {'hrsh7th/nvim-cmp'},
-            {'hrsh7th/cmp-nvim-lsp'},
-            {'L3MON4D3/LuaSnip'},
-        }
-    },
-    { 
-        'catppuccin/nvim', 
-        name = "catppuccin", 
-        priority = 1000 
+        'catppuccin/nvim',
+        name = "catppuccin",
+        priority = 1000
     },
     {
         'lukas-reineke/indent-blankline.nvim'
@@ -62,9 +42,6 @@ require("lazy").setup({
     {
         'j-morano/buffer_manager.nvim',
         dependencies = { 'nvim-lua/plenary.nvim' }
-    },
-    {
-        'github/copilot.vim'
     },
     {
         'tpope/vim-fugitive'

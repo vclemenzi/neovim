@@ -1,6 +1,8 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+vim.cmd("silent! intro")
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -17,8 +19,6 @@ vim.opt.rtp:prepend(lazypath)
 require("thebigbot.plugins")
 require("thebigbot.remap")
 require("thebigbot.lualine")
-require("thebigbot.completion")
-require("thebigbot.lsp")
 require("thebigbot.git")
 require("thebigbot.colorscheme")
 require("thebigbot.other")
