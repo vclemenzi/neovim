@@ -65,5 +65,11 @@ require("lazy").setup({
     },
     {
         'github/copilot.vim'
+    },
+    {
+        'tpope/vim-fugitive'
+    },
+    {
+        'navarasu/onedark.nvim'
     }
 })
