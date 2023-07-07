@@ -71,5 +71,8 @@ require("lazy").setup({
     },
     {
         'navarasu/onedark.nvim'
+    },
+    {
+        'lewis6991/gitsigns.nvim'
     }
 })

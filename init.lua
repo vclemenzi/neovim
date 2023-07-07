@@ -14,11 +14,12 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-
 require("thebigbot.plugins")
 require("thebigbot.remap")
 require("thebigbot.lualine")
 require("thebigbot.completion")
 require("thebigbot.lsp")
+require("thebigbot.git")
 require("thebigbot.colorscheme")
 require("thebigbot.other")
+require("thebigbot")
