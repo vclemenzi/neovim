@@ -8,3 +8,5 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
 vim.api.nvim_set_option("clipboard","unnamed")
+
+require('alpha').setup(require('alpha.themes.dashboard').config)
