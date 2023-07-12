@@ -9,4 +9,6 @@ vim.opt.expandtab = true
 
 vim.api.nvim_set_option("clipboard","unnamed")
 
-require('alpha').setup(require('alpha.themes.dashboard').config)
+require('Comment').setup()
+
+require('nvim-ts-autotag').setup()

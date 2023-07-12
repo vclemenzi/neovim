@@ -59,5 +59,8 @@ require("lazy").setup({
         'goolord/alpha-nvim',
         event = "VimEnter",
         dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
+    {
+        'numToStr/Comment.nvim'
     }
 })

@@ -23,4 +23,7 @@ require("thebigbot.git")
 require("thebigbot.colorscheme")
 require("thebigbot.other")
 require("thebigbot.coc")
+require("thebigbot.aliases")
+require("thebigbot.alpha")
 require("thebigbot")
+
