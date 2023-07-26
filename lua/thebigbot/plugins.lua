@@ -62,5 +62,9 @@ require("lazy").setup({
     },
     {
         'numToStr/Comment.nvim'
+    },
+    {
+        'stevearc/oil.nvim',
+        dependencies = { "nvim-tree/nvim-web-devicons" }
     }
 })

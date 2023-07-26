@@ -9,7 +9,9 @@ vim.opt.expandtab = true
 
 vim.api.nvim_set_option("clipboard","unnamedplus")
 
-require('Comment').setup()
+require('Comment').setup({
+    filetypes = { "html", "xml", "jsx", "tsx",  },
+})
 
 require('nvim-ts-autotag').setup()
 
@@ -27,3 +29,5 @@ function GoToLine()
 end
 
 vim.api.nvim_set_keymap('n', '<leader>l', ':lua GoToLine()<CR>', {noremap = true})
+
+require("oil").setup()
