@@ -30,4 +30,8 @@ end
 
 vim.api.nvim_set_keymap('n', '<leader>l', ':lua GoToLine()<CR>', {noremap = true})
 
-require("oil").setup()
+require("oil").setup({
+    view_options = {
+        show_hidden = true,
+    },
+})
