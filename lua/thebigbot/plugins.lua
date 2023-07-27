@@ -4,16 +4,42 @@ require("lazy").setup({
       	dependencies = { 'nvim-lua/plenary.nvim' }
     },
     {
+        'neovim/nvim-lspconfig'
+    },
+    {
+        'williamboman/mason.nvim'
+    },
+    {
+        'williamboman/mason-lspconfig.nvim'
+    },
+    {
+        'hrsh7th/cmp-nvim-lsp'
+    },
+    {
+        'hrsh7th/cmp-buffer'
+    },
+    {
+        'hrsh7th/cmp-path'
+    },
+    {
+        'hrsh7th/cmp-cmdline'
+    },
+    {
+        'hrsh7th/nvim-cmp'
+    },
+    {
+        'hrsh7th/cmp-vsnip'
+    },
+    {
+        'hrsh7th/vim-vsnip'
+    },
+    {
 	    'nvim-treesitter/nvim-treesitter',
 	    build = ':TSUpdate'
     },
     {
 	    'nvim-lualine/lualine.nvim',
 	    dependencies = { 'nvim-tree/nvim-web-devicons' }
-    },
-    {
-        'neoclide/coc.nvim',
-        branch = 'release'
     },
     {
 	    'm4xshen/autoclose.nvim'
