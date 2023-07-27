@@ -4,12 +4,16 @@ require("mason-lspconfig").setup({
 })
 
 
-require("lspconfig").lua_ls.setup {}
-require("lspconfig").rust_analyzer.setup {}
-require("lspconfig").tsserver.setup {}
-require("lspconfig").pyright.setup {}
-require("lspconfig").gopls.setup {}
-require("lspconfig").cssls.setup {}
-require("lspconfig").tailwindcss.setup {}
-require("lspconfig").astro.setup {}
-require("lspconfig").svelte.setup {}
+local on_attach = function(client)
+    require("lsp-format").on_attach(client)
+end
+
+require("lspconfig").lua_ls.setup { on_attach = on_attach }
+require("lspconfig").rust_analyzer.setup { on_attach = on_attach }
+require("lspconfig").tsserver.setup { on_attach = on_attach }
+require("lspconfig").pyright.setup { on_attach = on_attach }
+require("lspconfig").gopls.setup { on_attach = on_attach }
+require("lspconfig").cssls.setup { on_attach = on_attach }
+require("lspconfig").tailwindcss.setup { on_attach = on_attach }
+require("lspconfig").astro.setup { on_attach = on_attach }
+require("lspconfig").svelte.setup { on_attach = on_attach }

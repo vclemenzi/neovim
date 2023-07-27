@@ -34,6 +34,12 @@ require("lazy").setup({
         'hrsh7th/vim-vsnip'
     },
     {
+        'lukas-reineke/lsp-format.nvim'
+    },
+    {
+        'MunifTanjim/prettier.nvim'
+    },
+    {
 	    'nvim-treesitter/nvim-treesitter',
 	    build = ':TSUpdate'
     },
