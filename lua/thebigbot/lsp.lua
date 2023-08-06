@@ -1,11 +1,12 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-    ensure_installed = { 'lua_ls', 'rust_analyzer', 'tsserver', 'pyright', 'gopls', 'cssls', 'tailwindcss', 'astro', 'svelte' }
+  ensure_installed = { 'lua_ls', 'rust_analyzer', 'tsserver', 'pyright', 'gopls', 'cssls', 'tailwindcss', 'astro',
+    'svelte', "eslint" }
 })
 
 
 local on_attach = function(client)
-    require("lsp-format").on_attach(client)
+  require("lsp-format").on_attach(client)
 end
 
 require("lspconfig").lua_ls.setup { on_attach = on_attach }
@@ -17,3 +18,4 @@ require("lspconfig").cssls.setup { on_attach = on_attach }
 require("lspconfig").tailwindcss.setup { on_attach = on_attach }
 require("lspconfig").astro.setup { on_attach = on_attach }
 require("lspconfig").svelte.setup { on_attach = on_attach }
+require("lspconfig").eslint.setup { on_attach = on_attach }
