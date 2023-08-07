@@ -13,6 +13,7 @@
   "indent-blankline.nvim": { "branch": "master", "commit": "7075d7861f7a6bbf0de0298c83f8a13195e6ec01" },
   "lazy.nvim": { "branch": "main", "commit": "3ad55ae678876516156cca2f361c51f7952a924b" },
   "lsp-format.nvim": { "branch": "master", "commit": "ca0df5c8544e51517209ea7b86ecc522c98d4f0a" },
+  "lspkind.nvim": { "branch": "master", "commit": "57610d5ab560c073c465d6faf0c19f200cb67e6e" },
   "lualine.nvim": { "branch": "master", "commit": "05d78e9fd0cdfb4545974a5aa14b1be95a86e9c9" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "e86a4c84ff35240639643ffed56ee1c4d55f538e" },
   "mason.nvim": { "branch": "main", "commit": "fe9e34a9ab4d64321cdc3ecab4ea1809239bb73f" },
@@ -28,8 +29,10 @@
   "prettier.nvim": { "branch": "main", "commit": "d98e732cb73690b07c00c839c924be1d1d9ac5c2" },
   "telescope.nvim": { "branch": "master", "commit": "0e0600908d1ad5ac4992fa0ab578e23e9d9d6f37" },
   "todo-comments.nvim": { "branch": "main", "commit": "09b0b17d824d2d56f02ff15967e8a2499a89c731" },
+  "vim-astro": { "branch": "main", "commit": "34732be5e9a5c28c2409f4490edf92d46d8b55a9" },
   "vim-be-good": { "branch": "master", "commit": "c290810728a4f75e334b07dc0f3a4cdea908d351" },
   "vim-fugitive": { "branch": "master", "commit": "b3b838d690f315a503ec4af8c634bdff3b200aaf" },
   "vim-svelte-plugin": { "branch": "master", "commit": "612b34640919c29b5cf2d85289dbc762b099858a" },
-  "vim-vsnip": { "branch": "master", "commit": "7753ba9c10429c29d25abfd11b4c60b76718c438" }
+  "vim-vsnip": { "branch": "master", "commit": "7753ba9c10429c29d25abfd11b4c60b76718c438" },
+  "window-picker.nvim": { "branch": "main", "commit": "2fe9e4001beeeee9562ddb21b0ad46ab2463bc5b" }
 }
