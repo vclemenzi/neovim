@@ -1,7 +1,20 @@
+local lsp_servers = {
+  "lua_ls",
+  "rust_analyzer",
+  "tsserver",
+  "pyright",
+  "gopls",
+  "cssls",
+  "tailwindcss",
+  "astro",
+  "svelte",
+  "eslint",
+  "emmet_ls"
+}
+
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = { 'lua_ls', 'rust_analyzer', 'tsserver', 'pyright', 'gopls', 'cssls', 'tailwindcss', 'astro',
-    'svelte', "eslint" }
+  ensure_installed = lsp_servers
 })
 
 
@@ -9,13 +22,6 @@ local on_attach = function(client)
   require("lsp-format").on_attach(client)
 end
 
-require("lspconfig").lua_ls.setup { on_attach = on_attach }
-require("lspconfig").rust_analyzer.setup { on_attach = on_attach }
-require("lspconfig").tsserver.setup { on_attach = on_attach }
-require("lspconfig").pyright.setup { on_attach = on_attach }
-require("lspconfig").gopls.setup { on_attach = on_attach }
-require("lspconfig").cssls.setup { on_attach = on_attach }
-require("lspconfig").tailwindcss.setup { on_attach = on_attach }
-require("lspconfig").astro.setup { on_attach = on_attach }
-require("lspconfig").svelte.setup { on_attach = on_attach }
-require("lspconfig").eslint.setup { on_attach = on_attach }
+for _, lsp in ipairs(lsp_servers) do
+  require("lspconfig")[lsp].setup { on_attach = on_attach }
+end
