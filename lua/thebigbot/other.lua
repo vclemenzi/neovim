@@ -10,7 +10,7 @@ vim.opt.expandtab = true
 vim.api.nvim_set_option("clipboard", "unnamedplus")
 
 require('Comment').setup({
-  filetypes = { "html", "xml", "jsx", "tsx", },
+  filetypes = { "html", "xml", "jsx", "tsx" },
 })
 
 require('nvim-ts-autotag').setup()
@@ -35,3 +35,6 @@ require("oil").setup({
     show_hidden = true,
   },
 })
+
+vim.opt.cursorline = true
+vim.opt.cursorlineopt = "number"
