@@ -13,7 +13,9 @@ local lsp_servers = {
 }
 
 require("mason").setup()
-require("mason-lspconfig").setup({
+local mlsp = require("mason-lspconfig")
+
+mlsp.setup({
   ensure_installed = lsp_servers
 })
 
@@ -22,6 +24,8 @@ local on_attach = function(client)
   require("lsp-format").on_attach(client)
 end
 
-for _, lsp in ipairs(lsp_servers) do
-  require("lspconfig")[lsp].setup { on_attach = on_attach }
-end
+mlsp.setup_handlers {
+  function(server)
+    require('lspconfig')[server].setup({ on_attach = on_attach })
+  end
+}

@@ -38,3 +38,5 @@ require("oil").setup({
 
 vim.opt.cursorline = true
 vim.opt.cursorlineopt = "number"
+
+require('colorizer').setup()
